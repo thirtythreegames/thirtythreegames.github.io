@@ -5,16 +5,48 @@
 
 body{  
    text-align:center; /*For IE6 Shenanigans*/  
-background-color:#000343;
+background:#000343;
 font-family: 'Pixelar Regular W01 Regular';
-color:white;
+font-size: 20px;
+color: #95b6de;
 }  
+
+#fullpage{
+width:100%;
+min-width:960px;
+overflow:hidden;
+}
 
 #wrapper{  
 padding-top:60px;
    width:960px;  
    margin:0 auto;  
    text-align:left;  
+}
+
+.text-column{
+padding-top:1.3em;
+width:480px;
+margin:0 auto;
+text-align:justify;
+line-height:1.3em;
+}
+
+h1 {
+padding-top:1.3em;
+font-size:1em;
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 2px solid #4a4e87; 
+   height: 0.6em;
+margin-bottom:1.8em;
+   color:#4a4e87;
+} 
+
+h1 span {
+    background:#000343; 
+    padding:0 1.3em;
+
 }
 
 .half {
@@ -26,5 +58,44 @@ margin-left:-462px;
 }
 
 p {
-padding-bottom:1em;
+padding-bottom:1.3em;
+}
+
+.quote {
+line-height:1.3em;
+width:430px;
+margin: 0 auto;
+padding-bottom: 2.6em;
+text-align:center;
+}
+.quote .qb{
+color: #c10e57;
+padding-bottom:0.65em;
+}
+.quote .at{
+
+}
+.text-container{
+padding-top:2.6em;
+}
+
+.if{
+border:2px #c10e57 solid;
+margin-top:1.3em;
+}
+
+a{
+text-decoration:none;
+color:
+#4a4e87;
+}
+a:hover{
+color:#c10e57;
+}
+
+.center{
+width:960px;
+margin-left:-240px;
+text-align:center;
+color:#4a4e87;
 }
