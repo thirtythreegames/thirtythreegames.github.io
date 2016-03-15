@@ -24,3 +24,7 @@ display:inline-block;
 .mega {
 margin-left:-462px;
 }
+
+p {
+padding-bottom:1em;
+}
