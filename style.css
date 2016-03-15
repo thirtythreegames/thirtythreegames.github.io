@@ -6,9 +6,12 @@
 body{  
    text-align:center; /*For IE6 Shenanigans*/  
 background-color:#000343;
+font-family: 'Pixelar Regular W01 Regular';
+color:white;
 }  
 
 #wrapper{  
+padding-top:60px;
    width:960px;  
    margin:0 auto;  
    text-align:left;  
