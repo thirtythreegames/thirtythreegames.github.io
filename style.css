@@ -78,6 +78,17 @@ color: #c10e57;
 padding-top:2.6em;
 }
 
+em{
+font-style:regular;
+font-family:'Pixelar Regular SC W01 Regular';
+}
+
+.center-holder{
+padding-top:6em;
+width:100%;
+text-align:center;
+}
+
 .if{
 border:2px #c10e57 solid;
 margin-top:1.3em;
