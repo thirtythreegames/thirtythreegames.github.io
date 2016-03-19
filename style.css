@@ -21,7 +21,7 @@ overflow:hidden;
 padding-top:60px;
    width:960px;  
    margin:0 auto;  
-   text-align:left;  
+   text-align:left;
 }
 
 .text-column{
@@ -32,16 +32,23 @@ text-align:justify;
 line-height:1.3em;
 }
 
+
+
 h1 {
 padding-top:1.3em;
 font-size:1em;
    width: 100%; 
    text-align: center; 
    border-bottom: 2px solid #4a4e87; 
+
    height: 0.6em;
 margin-bottom:1.8em;
    color:#4a4e87;
 } 
+
+.third h1{
+   border:none;
+}
 
 h1 span {
     background:#000343; 
@@ -91,7 +98,7 @@ text-align:center;
 
 .if{
 border:2px #c10e57 solid;
-margin-top:1.3em;
+margin-top:20px;
 }
 
 a{
@@ -108,4 +115,12 @@ width:960px;
 margin-left:-240px;
 text-align:center;
 color:#4a4e87;
+}
+.third{
+display:inline-block;
+width:300px;
+vertical-align:top;
+}
+.middle{
+padding:0px 30px;
 }
