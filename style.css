@@ -34,6 +34,77 @@ line-height:1.3em;
 
 
 
+#topbar{
+position:fixed;
+width:100%;
+height:60px;
+background:black;
+}
+.bar-content{
+width:960px;
+margin:0 auto;
+height:60px;
+padding-top:15px;
+position:relative;
+text-align:left;
+color:#53e8be;
+}
+
+.bar-content a{
+color:#cc0262;
+margin-left:10px;
+}
+
+.bar-content a:hover{
+color:#53e8be;
+}
+
+.bar-left{
+position:absolute;
+right:0;
+top:15px;
+text-align:right;
+}
+
+.sprite{
+height:32px;
+background-image:url('images/comic2/Social.png');
+display:inline-block;
+margin-left:10px;
+}
+a.tw{
+width:36px;
+background-position:104px 0;
+}
+a.st{
+width:46px;
+background-position:0px 0;
+}
+a.snd{
+width:50px;
+background-position:50px 0;
+}
+
+a.tw:hover{
+background-position:104px 32px;
+}
+a.st:hover{
+background-position:0 32px;
+}
+a.snd:hover{
+background-position:50px 32px;
+}
+
+.anchor{
+position:relative;
+top:-60px;
+}
+#About{
+top:-120px;
+}
+
+
+
 h1 {
 padding-top:1.3em;
 font-size:1em;
