@@ -5,7 +5,7 @@
 
 body{  
    text-align:center; /*For IE6 Shenanigans*/  
-background:#000343;
+background:#010022;
 font-family: 'Pixelar Regular W01 Regular';
 font-size: 18pt;
 color: #95b6de;
@@ -15,6 +15,7 @@ color: #95b6de;
 width:100%;
 min-width:964px;
 overflow:hidden;
+background:#000343;
 }
 
 #wrapper{  
@@ -38,7 +39,7 @@ line-height:1.3em;
 position:fixed;
 width:100%;
 height:60px;
-background:black;
+background:#010022;
 }
 .bar-content{
 width:964px;
@@ -149,7 +150,7 @@ text-align:center;
 font-size:32px;
 }
 .quote .qb{
-color: #c10e57;
+color: #cc0262;
 }
 .quote .at{
 
@@ -174,7 +175,7 @@ margin-top:16px;
 border:2px black solid;
 }
 .if{
-border:2px #c10e57 solid;
+border:2px #cc0262 solid;
 }
 
 a{
@@ -183,7 +184,7 @@ color:
 #4a4e87;
 }
 a:hover{
-color:#c10e57;
+color:#cc0262;
 }
 
 .pr{
