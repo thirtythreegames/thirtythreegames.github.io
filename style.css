@@ -11,19 +11,36 @@ font-size: 18pt;
 color: #95b6de;
 }  
 
-#fullpage{
+.fullpage{
 width:100%;
 min-width:964px;
 overflow:hidden;
-background:#000343;
+
+
 }
 
-#wrapper{  
-padding-top:60px;
+.fullpage.bottom{
+background:#010022;
+}
+
+.fullpage.top{
+background-image:url('images/background.png');
+}
+
+.wrapper{
+padding-left:50px;
+padding-right:50px;
    width:964px;  
    margin:0 auto;  
    text-align:left;
+
 }
+.wrapper.top{
+padding-top:60px;
+background-image:url('images/backgroundmask.png');
+}
+
+
 
 .text-column{
 padding-top:1.3em;
@@ -112,7 +129,7 @@ padding-top:1.3em;
 font-size:1em;
    width: 100%; 
    text-align: center; 
-   border-bottom: 2px solid #4a4e87; 
+
 letter-spacing:2px;
    height: 0.6em;
 margin-bottom:1.8em;
@@ -124,7 +141,7 @@ margin-bottom:1.8em;
 }
 
 h1 span {
-    background:#000343; 
+
     padding:0 1.3em;
 
 }
