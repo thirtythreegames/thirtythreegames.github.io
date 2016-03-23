@@ -33,12 +33,13 @@ padding-right:50px;
    width:964px;  
    margin:0 auto;  
    text-align:left;
-       padding-bottom: 20px;
+  padding-bottom:5em;
 
 }
 .wrapper.top{
 padding-top:60px;
 background-image:url('images/backgroundmask.png');
+
 }
 
 
@@ -184,7 +185,7 @@ font-family:'Pixelar Regular SC W01 Regular';
 }
 
 .center-holder{
-padding-top:6em;
+padding-top:5em;
 width:100%;
 text-align:center;
 }
