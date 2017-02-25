@@ -3,13 +3,22 @@
    padding:0;  
 }  
 
-/*hello matthias this is a test*/
+
+@font-face {
+    font-family: '04b03regular';
+    src: url('04b_03__-webfont.woff2') format('woff2'),
+         url('04b_03__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body{  
    text-align:center; /*For IE6 Shenanigans*/  
 background:#010022;
-font-family: 'Pixelar Regular W01 Regular';
-font-size: 18pt;
+/*font-family: 'Pixelar Regular W01 Regular';*/
+font-family: '04b03regular';
+font-size: 12pt;
 color: #95b6de;
 }  
 
@@ -72,7 +81,7 @@ background:#010022;
 width:964px;
 margin:0 auto;
 height:60px;
-padding-top:15px;
+padding-top:23px;
 position:relative;
 text-align:left;
 color:#53e8be;
@@ -176,7 +185,7 @@ padding-bottom:1.3em;
 }
 
 .quote {
-line-height:1.3em;
+line-height:1.9em;
 width:430px;
 margin: 0 auto;
 padding-bottom: 2.6em;
@@ -191,12 +200,14 @@ font-size:1.5em;
 
 }
 .text-container{
+	line-height: 1.5em;
 padding-top:2.6em;
 }
 
 .sc{
+	
 font-style:regular;
-font-family:'Pixelar Regular SC W01 Regular';
+font-family:'04b03regular';
 }
 
 .center-holder{
