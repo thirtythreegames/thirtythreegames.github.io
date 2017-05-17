@@ -50,7 +50,7 @@
 	            font-family: 'Inconsolata', monospace;
 	            font-weight: bold;
 	           
-	            font-size: 35px;
+	            font-size: 30px;
 	            text-align: center;
 	            padding-bottom: 30px;
 	          
@@ -58,6 +58,7 @@
             #content {
                 width: 400px;
                 height: 300px;
+                text-align: center;
             }
             ::-moz-selection { /* Code for Firefox */
 		    color: #681A47;
@@ -78,12 +79,17 @@
 	text-decoration: none;
 				 
             }
-            #text-is {
+            #text-contact {
                 animation-duration: .4s;
                 display: none;
                 
             }
-            #text-has-made {
+            #text-about {
+                animation-duration: .4s;
+                display: none;
+                
+            }
+            #text-projects {
                 animation-duration: .4s;
                 display: none;
                 
@@ -137,6 +143,7 @@
 					#content {
                 width: 90%;
                 height: 200px;
+                text-align: left;
             }
         </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -154,24 +161,31 @@
             </div>
 
               
-                <header><a href="#" class="not-selected" id="link-has-made">About</a><span id="slash"> </span><a href="#" class="not-selected" id="link-is">Contact</a></header>
-                <p id="text-is">Get at us by sending Jordan Bloemen some mail: jordan@ThirtyThreeGames.com </p>
-                <p id="text-has-made">ThirtyThree is an indie game studio hailing from chilly Alberta, Canada. We're best known for making the action-runner <a href="http://rungunjumpgun.com/" class="selected">RunGunJumpGun.</a></p>
+                <header><a href="#" class="not-selected" id="link-about">About</a><span id="slash"> <a href="#" class="not-selected" id="link-projects">Projects</a><span id="slash"> </span><span id="slash"><a href="#" class="not-selected" id="link-contact">Contact</a></span></header>
+                <p id="text-contact">Get at us by sending Jordan Bloemen some mail: jordan@ThirtyThreeGames.com </p>
+                <p id="text-about">ThirtyThree is an indie game studio hailing from chilly Alberta, Canada. We&#39;re best known for making the action-runner <a href="http://rungunjumpgun.com/" class="selected">RunGunJumpGun.</a></p>
+                
+                <p id="text-projects"><a href="http://rungunjumpgun.com/" class="selected">RunGunJumpGun</a> (2016)<br>
+                <a href='https://vimeo.com/201581136' class="selected">The Box</a> (2016)<br><a href='https://thirtythreegames.itch.io/kasketball' class="selected">Kasketball</a> (2015)<br><a href='https://vimeo.com/202081740' class="selected">Moustache of Ceremonies</a> (2015)</p>
             </div>
                     </div>
         <script>
             var animationDuration = .3;
             var firstClicked = false;
 
-            function hide(link, elem, then) {
+            function hide(link, link2, elem, elem2, then) {
                 if (!firstClicked) {
                     firstClicked = true;
                     then();
                 } else {
                     link.className = 'not-selected';
+                    link2.className = 'not-selected'; 
                     elem.className = 'animated fadeOut';
+                    elem2.className = 'animated fadeOut';
+                    
                     setTimeout(function() {
                         elem.style.display = 'none';
+                        elem2.style.display = 'none';
                         then();
                     }, animationDuration * 1000);
                 }
@@ -183,16 +197,23 @@
                 link.className = 'selected';
             }
 
-            var textIs = document.getElementById('text-is');
-            var textHasMade = document.getElementById('text-has-made');
-            var linkIs = document.getElementById('link-is');
-            var linkHasMade = document.getElementById('link-has-made');
+            var textContact = document.getElementById('text-contact');
+            var textAbout = document.getElementById('text-about');
+            var textProjects = document.getElementById('text-projects');
+            var linkContact = document.getElementById('link-contact');
+            var linkAbout = document.getElementById('link-about');
+            var linkProjects = document.getElementById('link-projects');
+            
+            
 
-            linkIs.onclick = function() {
-                hide(linkHasMade, textHasMade, function() { show(linkIs, textIs); });
+            linkContact.onclick = function() {
+                hide(linkAbout, linkProjects, textAbout, textProjects, function() { show(linkContact, textContact); });
             };
-            linkHasMade.onclick = function() {
-                hide(linkIs, textIs, function() { show(linkHasMade, textHasMade); });
+            linkAbout.onclick = function() {
+                hide(linkContact, linkProjects, textContact, textProjects, function() { show(linkAbout, textAbout); });
+            };
+            linkProjects.onclick = function() {
+                hide(linkContact, linkAbout, textAbout, textContact, function() { show(linkProjects, textProjects); });
             };
         </script>
     </body>
