@@ -17,14 +17,14 @@
         <style>
 	        :root {
   --text-color: #DF3554;
-  --text-deselected: #681A47; 
+  --text-deselected: #681A47;
   --bg-top:#340F41;
   --bg-bottom: #280b21 ;
 }
-	        
-	      	        
+
+
             html, body {
-                color: var(--text-color);               
+                color: var(--text-color);
                 font-family: 'Inconsolata', monospace;
                 font-size: 14pt;
                 margin: 0;
@@ -49,16 +49,16 @@
             }
             p {
                 margin: 0;
-                
+
             }
             header {
 	            font-family: 'Inconsolata', monospace;
 	            font-weight: bold;
-	           
+
 	            font-size: 30px;
 	            text-align: center;
 	            padding-bottom: 30px;
-	          
+
             }
             #content {
                 width: 400px;
@@ -66,49 +66,49 @@
                 text-align: center;
             }
             ::-moz-selection { /* Code for Firefox */
-		    color: var(--text-deselected); 
+		    color: var(--text-deselected);
 		    background: #000;
 		}
-		
+
 		::selection {
-		    color: var(--text-deselected);  
+		    color: var(--text-deselected);
 		    background: #000;
 		}
             a{
-	            
+
 	                display:inline-block;
     line-height:1.1em;
 	position: relative;
-	border-bottom: 2px solid var(--text-deselected); 
+	border-bottom: 2px solid var(--text-deselected);
 	padding-bottom: 0px;
 	text-decoration: none;
-				 
+
             }
             #text-contact {
                 animation-duration: .4s;
                 display: none;
-                
+
             }
             #text-about {
                 animation-duration: .4s;
                 display: none;
-                
+
             }
             #text-projects {
                 animation-duration: .4s;
                 display: none;
-                
+
             }
             #slash {
-                color: var(--text-deselected); 
+                color: var(--text-deselected);
             }
             .not-selected {
-                color: var(--text-deselected); 
+                color: var(--text-deselected);
                 animation-duration: .4s;
                 animation-name: colorFadeOutAnim;
-                
+
             }
-            
+
             .selected {
                 color: var(--text-color);
                 animation-duration: .4s;
@@ -116,7 +116,7 @@
             }
             @keyframes colorFadeInAnim {
                 0% {
-                    color: var(--text-deselected); 
+                    color: var(--text-deselected);
                 }
                 100% {
                     color: var(--text-color);
@@ -127,7 +127,7 @@
                     color: var(--text-color);
                 }
                 100% {
-                    color: var(--text-deselected); 
+                    color: var(--text-deselected);
                 }
             }
             #img-holder {
@@ -151,12 +151,12 @@
                 text-align: left;
                 padding-bottom: 80px;
                 font-size: 12pt;
-                
+
             }
             header {
-	            
+
 	            font-size: 20px;
-	            
+
 	            }
 	          #img-holder {
                 padding-bottom: 40px;
@@ -164,30 +164,31 @@
                 text-align: center;
                 padding-top: 40px;
             }
-	            
+
 	            }
         </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    
+
     <body>
-	   
+
         <div id="top">
-	        
+
             <div id="content">
-	            
+
 	            <div id="img-holder">
-		            
+
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.93 168.72"><title>ThirtyThreeLogo</title><path d="M60.62,27.74c3-.22,4.27-4.39.75-5S56.47,27.75,60.62,27.74Zm111.42,2.72c5.34-.13,2.52-7.1-1.54-6.26S168.4,30.42,172.44,30.46ZM41.74,32.4c4.92,0,4.49-5.61.15-6.27C36.07,25.65,35.55,33.05,41.74,32.4ZM117.08,21.1c6.36-.67,5-7.71-.66-6.77C111.26,15.19,112.22,20.79,117.08,21.1ZM95.94,16.21c-5.53-.08-7.67,8.16-.33,7.55,5.91-.49,7.16-7.62.33-7.55Zm54.35,1.4c-5.09,0-7,5.49-1.48,7.47,7.63,2.94,9.57-8,1.48-7.47ZM164,59.77c-10.12-.72,1.51,6.13,2.66,8.07s0,4.74,1.56,6.37,6.69.47,7.41-.9c.59-.93-.16-2.54.36-3.57.67-1.32,2.39-1.6,3.1-2.42,1.61-2.75-.57-5.22-4-5.32-2.47-.08-3,1.61-5.69.48-2.39-.65-3-2.71-5.42-2.71ZM65.35,109c1-.11-.72-2.61-1.06-2.43-1.3-.47-8.22.77-9.44.46-4.63.27-13,1.41-6.34,7.44.7.59,1.68-.19,2.39.66s0,1.57.48,2.2c.63.46-.44,1.49.41,2.47.48.38,4,.4,4.92.23,4.34-.45,2.69-2.47,5-5.66C63.78,111.93,65.35,113,65.35,109Zm79.19-51.51c-6.31,0-12.3,1.51-6.35,7.32.37.36,1.76-.44,2.36.07,1,.4.66,2.69.4,3.42.3,2.46-.64,5.25,2,6.13,2.38.79,6.26-2,7.06-4,1.44-3.61-.33-4.5,2-7.58,1.77-2.3,3.64-3.31-.21-4.91-2.12-.48-5.49-.42-7.72-.42ZM102.35,79.08c.46,0-1.37-13.69-1.74-15-2-7.2-11.23-3.92-11.19,2.68,0,3.71,1,7.57,1.29,11.28.23,3-.21,6.94,1.31,9.69C96.33,95.49,102.48,83.44,102.35,79.08Zm-7.71,25.63c.68,0-.6-5.67-1.19-6.17-1.75-1.49-5.74.09-7.15,1.41-2.21,2.69.11,7.71-4.17,8.7-4.56,1.06-2.36-6.28-8.23-4.69-5,1.35-5.1,9.25-4.11,13.65.33,1.44-.92,1.22.46,2.3.9.71,6.2-.44,7.05-1,2-1.39,2.65-8.34,6.4-5.61,3.16,2.08.64,6.49,6.95,4.32C95.69,116.09,94.64,109,94.64,104.71ZM56.23,79.24c-.28-3.46.43-9.53-4.54-10.32-3.06-.49-9.46,3.05-12.18,4.59-3.46,2.19-4.16,4.1-3.5,8.51.3,2,.3,3.46,2.19,4.91,1.33.74,2-1.16,3.38.6,1.69,2.14.43,7.68,1,10.29.73,3.28,3.51,5.48,7.53,3.15,3.44-2.6,2-9.39,1.95-13.25,0-2.34-.27-3.28.94-5.12C54,81,56.23,81.92,56.23,79.24Zm101,1.34c-.33,0,1.38,12.41,1.62,13.45.38,2.3.37,7.05,2.16,8.79s5.32.78,7.42.38c2.21-.35,7.56-.28,9.47-1.6,1.39-1,3.2-4.48,2.14-6.54-2-3.09-8.1,1.13-10.4-1-2.65-2.42,11-2.25,5.56-7.43-1-.93-12.15-1.16-4.45-3.18,2.45-.68,6.52.9,6.14-3-.26-2.7-2.4-2.59-4.39-2.93C168,77.16,157.27,74.05,157.27,80.58Zm-50.56-3.45c.15,5.44,2.36,8.9,7.46,4,2.28-2.2,1.46-9.12,4.45-9.22,3.72-.13,2.94,5.21,5.33,6,1.11.37,5.45-1.26,6.61-1.48,2.68-2.19,1.46-3.44-.44-6.11-1.08-1.28-2.13-1.32-2.32-2.43-.32-2.51,2.77-3.73,1.27-6.94-2.19-4.67-10-2.76-14.26-2.43-3.76.29-8.95-.06-9.59,4.21C104.53,66.05,106.71,72,106.71,76.73ZM149.37,91c1.32,0-1.66-1.47-1.47-1.93-1.35-.37-5.9,2.09-5.24-1.33.43-2.21,5.43-1.55,6.42-3.3,1.17-1.48,1.45-5-.09-6.2-2.67-2-13.09,1.47-15.46,3-4.17,2.63-2.49,8.51-2.63,12.78.32,5.38-1.18,15.3,6,15.31,3.08,0,12.3-1.62,14-3.95.92-1.24,1.44-6.67.44-7.4-1.63-1.44-5.63,1.47-7.19,1C140.6,96.59,149.37,94.63,149.37,91Zm-23,1c.42-7.07-4.66-6.22-9.44-4.38-3.94,1.4-11.09,3.16-13.94,6.36-2.41,2.71-2,7.64-1.92,11,0,2.58-.44,5.33,0,7.48.53,3.28.38,3,3.9,2.56,4.73-.64,5-1.6,6.38-5.43.76-2.27.26-3.91,3.25-2.49,2.05.7,2.36,5.2,4.22,6,1.45.63,3.61-.48,5.05-1.1,5.18-2.21,3.93-4.66,2-8.74-.41-1.75-1.18-.63-1.17-3S126.35,94.76,126.35,91.94ZM86.24,82.49c.57,0-1.23-16.74-2.2-18.33-1.67-2.73-4.44-2.9-7.25-1S75,66.76,75.13,70c.08,2.21-.3,7-4.37,5.59-2.47-1-.91-6-2.2-8.11-1.46-2.44-3.61-2.18-6.18-1-4,1.42-3.26,3.47-2.45,8.13s.43,8.29,1.3,12.42c.23,2-.18,7.12.62,8.67,1,1.93,4.49,2.43,7.28,1.43,4.11-2.07,1.19-6.49,2.28-9.9.6-1.48,2.46-5,5-2.68,1.7,1.57-.09,6.79,1.27,8.58,1.44,2.42,5,1.32,7.12-.71C87.32,89.56,86.24,86.2,86.24,82.49ZM50.75,16c9,0,15.77,5,20.42,12.37a24.68,24.68,0,0,1,3.23,9.54c.49,3,.21,7.93,2.58,10.25a5.92,5.92,0,0,0,8.5-.71c2.35-3.24.36-8.2-.43-11.6-1.78-7.58-4-16-.4-23.52C87.31,5,94.6.72,102.31,0c6.48-.57,17,3.43,20.51,9.44s2.34,13.29,1.54,19.75c-.42,3.39-.66,7.42,1.41,10.4,2.7,3.49,7,3.17,7.35-1.57.57-7.62-1.16-14.79,2.77-21.92S146,5,154.22,6c8.46,1.06,17.94,3.58,21.36,12.65,1.41,3.75,2.94,7.6,3,11.67s-2.66,8.48-2,12.49c.5,3.21,1.63,3.4,4.41,4.53,3,1.24,5.27,3.31,8.11,4.72,2.69,1.34,3.29,1.48,6-1.44,2.94-3.19,4.48-7.46,4-12.18-.68-3.25-2.51-5.68-1.51-9.13,1.13-3.91,5.43-6.77,9.43-5.4,7.61,2.6,6,14.29,4,19.47A30.9,30.9,0,0,1,205.94,53c-2.61,3.16-7.1,5.27-9.35,8.59-1.68,2.47-.62,4.47-.17,7.29A62.69,62.69,0,0,1,197.15,82a61.74,61.74,0,0,1-4,18.71,45.46,45.46,0,0,1-5.71,10.35c-3.68,4.92-5.63,3.17-3.77,9.17,2.4,7.73-.71,15.16-7.49,19.42-3.54,2.22-15.73,5.68-15.46-1.45.28-7.77,12-4.47,14.45-10.73,3.9-9.92-7.7-7.33-13.46-6.95-14.41,1-30.06,2.21-44.6,5.22-9,1.46-18,3.39-26.93,5.41-5.46,1.48-19.39,3.35-18.79,10.24.46,5.34,2.06,8.39-.1,13.4-1.34,3.34-2.9,7.71-5,10.63S61.14,169.7,58,167.4c-3.62-2.63-1.93-5.67-.14-9.05s3.64-6.93,3.71-10.75c.1-5.43-3.25-5.31-7.64-6.44a47.71,47.71,0,0,1-22.26-16.95c-4.27-6-6.12-14.35-8-21.39-.4-1.54-1-9.57-1.92-9.91-2-.72-5.49,5.36-6.27,6.74-3.25,5.76-1.6,18.15-7.61,21.53C-3,126.49,0,107.14,1.63,102.9c3.1-8.23,9.65-12.47,15.71-18.1,2.49-2.69,2.94-5.23,4-8.77a21.19,21.19,0,0,1,6.51-9.41c2.77-2.45,6.63-3.25,7.7-7.07S34,51.39,32.21,48.23C27.9,40.59,25.29,33.59,30,25.4a15.37,15.37,0,0,1,8.54-7.06C39.61,17.94,50.75,15.15,50.75,16Z"/><path d="M116.74,95.33c5.74-.46-1.4,6.67-4.14,5.57C108.46,99.4,114,94.49,116.74,95.33Z"/><path d="M123.14,63.14c0,1.5-8.07,4.67-6.42.56C117.24,62.41,123.19,60.48,123.14,63.14Z"/></svg>
             </div>
 
-              
+
                 <header><a href="#" class="not-selected" id="link-about">About</a><span id="slash"> <a href="#" class="not-selected" id="link-projects">Projects</a><span id="slash"> </span><span id="slash"><a href="#" class="not-selected" id="link-contact">Contact</a></span></header>
                 <p id="text-contact">Get at us by sending Jordan Bloemen some mail: jordan@thirtythreegames.com </p>
                 <p id="text-about">ThirtyThree is an indie game studio hailing from chilly Edmonton, Canada. We&#39;re best known for making the action-runner <a href="https://www.rungunjumpgun.com/" class="selected">ATOMIK: RunGunJumpGun</a>.</p>
 
 
 		<p id="text-projects">
+			<a href="https://reboundergame.com" class="selected">Rebounder</a> (now)<br>
 			<a href="https://apes.io" class="selected">APES.io</a> (2022)<br>
 	                <a href="https://vimeo.com/300856789" class="selected">COPE</a> (2019)<br>
 			<a href="https://rungunjumpgun.com" class="selected">ATOMIK: RunGunJumpGun</a> (2016)<br>
@@ -197,7 +198,7 @@
             </div>
                     </div>
         <script>
-        
+
 		var colorPalette = new Date().getDay();
        /* array with colors*/
 		var textcolors = [
@@ -208,8 +209,8 @@
 		  "#E47676",
 		  "#C2FF6B",
 		  "#4C394D",
-		  
-		
+
+
 		];
 		var deselectcolors = [
 		  "#681A47" ,
@@ -228,7 +229,7 @@
 		  "#1F024B",
 		  "#022327",
 		  "#B8C9B0",
-		  
+
 		];
 		var bgbottomcolors = [
 		  "#280b21" ,
@@ -252,7 +253,7 @@ function getTextColor() {
     colorPalette
    ];
 }
-   
+
    function getBgTopColor() {
    return bgtopcolors[
     colorPalette
@@ -269,21 +270,21 @@ document.documentElement.style.setProperty('--text-color', getTextColor());
 document.documentElement.style.setProperty('--text-deselected', getDeselectColor());
 document.documentElement.style.setProperty('--bg-top', getBgTopColor());
 document.documentElement.style.setProperty('--bg-bottom', getBgBottomColor());
-		 
+
             var animationDuration = .3;
             var firstClicked = false;
 
             function hide(link, link2, elem, elem2, then) {
                 if (!firstClicked) {
                     firstClicked = true;
-                    
+
                     then();
                 } else {
                     link.className = 'not-selected';
-                    link2.className = 'not-selected'; 
+                    link2.className = 'not-selected';
                     elem.className = 'animated fadeOut';
                     elem2.className = 'animated fadeOut';
-                    
+
                     setTimeout(function() {
                         elem.style.display = 'none';
                         elem2.style.display = 'none';
@@ -304,8 +305,8 @@ document.documentElement.style.setProperty('--bg-bottom', getBgBottomColor());
             var linkContact = document.getElementById('link-contact');
             var linkAbout = document.getElementById('link-about');
             var linkProjects = document.getElementById('link-projects');
-            
-            
+
+
 
             linkContact.onclick = function() {
                 hide(linkAbout, linkProjects, textAbout, textProjects, function() { show(linkContact, textContact); });
